@@ -64,3 +64,107 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Laravel Project
+
+Welcome to the Laravel project! This project is built using the Laravel framework, a powerful PHP framework for web development.
+
+## Getting Started
+
+These instructions will help you set up and run the project on your local machine.
+
+### Prerequisites
+
+Make sure you have the following software installed on your machine:
+
+- PHP (>= 7.4)
+- Composer
+- Node.js and NPM
+- MySQL or another supported database
+
+### Installation
+
+1. **Clone the Repository:**
+
+  
+   git clone https://github.com/jarircse16/gmail_api_task_gigalogy.git
+
+   cd gmail_api_task_gigalogy
+
+   composer install
+
+   cp .env.example .env
+
+   php artisan key:generate
+
+2. **Update the .env file**
+
+   APP_NAME=Laravel
+APP_ENV=local
+APP_KEY=base64:SouPxu65w+rBqBweu7i9tBDZApF1eCDSXfUbxHBJENI=
+APP_DEBUG=true
+APP_URL=http://localhost:8000
+
+LOG_CHANNEL=stack
+LOG_DEPRECATIONS_CHANNEL=null
+LOG_LEVEL=debug
+
+DB_CONNECTION=pgsql
+DB_HOST=127.0.0.1
+DB_PORT=5432
+DB_DATABASE=gmail_api
+DB_USERNAME=postgres
+DB_PASSWORD=12345
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+FILESYSTEM_DISK=local
+QUEUE_CONNECTION=database
+SESSION_DRIVER=file
+SESSION_LIFETIME=120
+
+MEMCACHED_HOST=127.0.0.1
+
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=465
+MAIL_USERNAME=jarircse16@gmail.com
+MAIL_PASSWORD=jlyoarzfpchgeiuu
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=jarircse16@gmail.com
+MAIL_FROM_NAME="${APP_NAME}"
+
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_DEFAULT_REGION=us-east-1
+AWS_BUCKET=
+AWS_USE_PATH_STYLE_ENDPOINT=false
+
+PUSHER_APP_ID=
+PUSHER_APP_KEY=
+PUSHER_APP_SECRET=
+PUSHER_HOST=
+PUSHER_PORT=443
+PUSHER_SCHEME=https
+PUSHER_APP_CLUSTER=mt1
+
+VITE_APP_NAME="${APP_NAME}"
+VITE_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
+VITE_PUSHER_HOST="${PUSHER_HOST}"
+VITE_PUSHER_PORT="${PUSHER_PORT}"
+VITE_PUSHER_SCHEME="${PUSHER_SCHEME}"
+VITE_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
+
+**3** Run database Migrations
+php artisan migrate
+
+**4. Run the server**
+php artisan serve
+
+
+
+
